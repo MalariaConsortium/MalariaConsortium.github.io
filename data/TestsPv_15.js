@@ -1,0 +1,1 @@
+var json_TestsPv_15 = {"type":"FeatureCollection","name":"TestsPv_15","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"date":"8\/10\/2019","time":"9:46:00 AM","ResEn":"Pv"},"geometry":{"type":"Point","coordinates":[105.8226933,13.2646735]}}]}
