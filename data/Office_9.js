@@ -1,1 +1,0 @@
-var json_Office_9 = {"type":"FeatureCollection","name":"Office_9","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":null,"Type":"Office"},"geometry":{"type":"Point","coordinates":[105.921058186070837,13.285774060790809]}}]}
