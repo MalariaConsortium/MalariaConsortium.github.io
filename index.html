@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/MarkerCluster.css">
+        <link rel="stylesheet" href="css/MarkerCluster.Default.css">
+        <link rel="stylesheet" href="css/leaflet-measure.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>Prey Lang project</title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/multi-style-layer.js"></script>
+        <script src="js/leaflet-svg-shape-markers.min.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet-measure.js"></script>
+        <script src="js/leaflet.markercluster.js"></script>
+        <script src="data/Week5269_0.js"></script>
+        <script src="data/Week42819_0.js"></script>
+        <script src="data/Week321258_1.js"></script>
+        <script src="data/Week214188_2.js"></script>
+        <script src="data/Week17118_3.js"></script>
+        <script src="data/Rivers_5.js"></script>
+        <script src="data/Villages_6.js"></script>
+        <script src="data/HealthCenters_7.js"></script>
+        <script src="data/Office_8.js"></script>
+        <script src="data/Sectors_9.js"></script>
+        <script src="data/Negative_10.js"></script>
+        <script src="data/Basecamps_11.js"></script>
+        <script src="data/Pfpositive_12.js"></script>
+        <script src="data/Pvpositive_13.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoom:13, zoomControl:true, maxZoom:16, minZoom:8
+        }).fitBounds([[13.007646667829405,105.03323666131774],[13.673965707626003,106.20885318518751]]);
+            map.setView([13.3145,105.7048], 12);
+        var hash = new L.Hash(map);
+        var measureControl = new L.Control.Measure({
+            position: 'topleft',
+            primaryLengthUnit: 'meters',
+            secondaryLengthUnit: 'kilometers',
+            primaryAreaUnit: 'sqmeters',
+            secondaryAreaUnit: 'hectares'
+        });
+        measureControl.addTo(map);
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .innerHTML = '';
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .className += ' fas fa-ruler';
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        function pop_Week5269_0(feature, layer) {
+        }
+
+        function style_Week5269_0_0() {
+            return {
+                pane: 'pane_Week5269_0',
+                opacity: 1,
+                color: 'rgba(196,60,57,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_Week5269_0');
+        map.getPane('pane_Week5269_0').style.zIndex = 400;
+        map.getPane('pane_Week5269_0').style['mix-blend-mode'] = 'normal';
+        var layer_Week5269_0 = new L.geoJson(json_Week5269_0, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_Week5269_0',
+            layerName: 'layer_Week5269_0',
+            pane: 'pane_Week5269_0',
+            onEachFeature: pop_Week5269_0,
+            style: style_Week5269_0_0,
+        });
+        bounds_group.addLayer(layer_Week5269_0);
+        map.addLayer(layer_Week5269_0);
+        function pop_Week42819_0(feature, layer) {
+        }
+
+        function style_Week42819_0_0() {
+            return {
+                pane: 'pane_Week42819_0',
+                opacity: 1,
+                color: 'rgba(232,113,141,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_Week42819_0');
+        map.getPane('pane_Week42819_0').style.zIndex = 400;
+        map.getPane('pane_Week42819_0').style['mix-blend-mode'] = 'normal';
+        var layer_Week42819_0 = new L.geoJson(json_Week42819_0, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_Week42819_0',
+            layerName: 'layer_Week42819_0',
+            pane: 'pane_Week42819_0',
+            onEachFeature: pop_Week42819_0,
+            style: style_Week42819_0_0,
+        });
+        bounds_group.addLayer(layer_Week42819_0);
+        map.addLayer(layer_Week42819_0);
+        function pop_Week321258_1(feature, layer) {
+        }
+
+        function style_Week321258_1_0() {
+            return {
+                pane: 'pane_Week321258_1',
+                opacity: 1,
+                color: 'rgba(243,166,178,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_Week321258_1');
+        map.getPane('pane_Week321258_1').style.zIndex = 401;
+        map.getPane('pane_Week321258_1').style['mix-blend-mode'] = 'normal';
+        var layer_Week321258_1 = new L.geoJson(json_Week321258_1, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_Week321258_1',
+            layerName: 'layer_Week321258_1',
+            pane: 'pane_Week321258_1',
+            onEachFeature: pop_Week321258_1,
+            style: style_Week321258_1_0,
+        });
+        bounds_group.addLayer(layer_Week321258_1);
+        map.addLayer(layer_Week321258_1);
+        function pop_Week214188_2(feature, layer) {
+        }
+
+        function style_Week214188_2_0() {
+            return {
+                pane: 'pane_Week214188_2',
+                opacity: 1,
+                color: 'rgba(213,180,60,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_Week214188_2');
+        map.getPane('pane_Week214188_2').style.zIndex = 402;
+        map.getPane('pane_Week214188_2').style['mix-blend-mode'] = 'normal';
+        var layer_Week214188_2 = new L.geoJson(json_Week214188_2, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_Week214188_2',
+            layerName: 'layer_Week214188_2',
+            pane: 'pane_Week214188_2',
+            onEachFeature: pop_Week214188_2,
+            style: style_Week214188_2_0,
+        });
+        bounds_group.addLayer(layer_Week214188_2);
+        map.addLayer(layer_Week214188_2);
+        function pop_Week17118_3(feature, layer) {
+        }
+
+        function style_Week17118_3_0() {
+            return {
+                pane: 'pane_Week17118_3',
+                opacity: 1,
+                color: 'rgba(133,182,111,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_Week17118_3');
+        map.getPane('pane_Week17118_3').style.zIndex = 403;
+        map.getPane('pane_Week17118_3').style['mix-blend-mode'] = 'normal';
+        var layer_Week17118_3 = new L.geoJson(json_Week17118_3, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_Week17118_3',
+            layerName: 'layer_Week17118_3',
+            pane: 'pane_Week17118_3',
+            onEachFeature: pop_Week17118_3,
+            style: style_Week17118_3_0,
+        });
+        bounds_group.addLayer(layer_Week17118_3);
+        map.addLayer(layer_Week17118_3);
+        var layer_OpenStreetMap_4 = L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            opacity: 1.0,
+            attribution: '',
+        });
+        layer_OpenStreetMap_4;
+        map.addLayer(layer_OpenStreetMap_4);
+
+        function style_Rivers_5_0() {
+            return {
+                pane: 'pane_Rivers_5',
+                opacity: 1,
+                color: 'rgba(100,152,210,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'round',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_Rivers_5');
+        map.getPane('pane_Rivers_5').style.zIndex = 405;
+        map.getPane('pane_Rivers_5').style['mix-blend-mode'] = 'normal';
+        var layer_Rivers_5 = new L.geoJson(json_Rivers_5, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_Rivers_5',
+            layerName: 'layer_Rivers_5',
+            pane: 'pane_Rivers_5',
+            style: style_Rivers_5_0,
+        });
+        bounds_group.addLayer(layer_Rivers_5);
+        map.addLayer(layer_Rivers_5);
+        function lab_Villages_6(feature, layer) {
+            var label = (feature.properties['village']);
+            layer.bindTooltip(label, {permanent: true});
+        }
+
+        function style_Villages_6_0() {
+            return {
+                pane: 'pane_Villages_6',
+                shape: 'square',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(4,119,200,1.0)',
+                interactive: false,
+            }
+        }
+        map.createPane('pane_Villages_6');
+        map.getPane('pane_Villages_6').style.zIndex = 406;
+        map.getPane('pane_Villages_6').style['mix-blend-mode'] = 'normal';
+        var layer_Villages_6 = new L.geoJson(json_Villages_6, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_Villages_6',
+            layerName: 'layer_Villages_6',
+            pane: 'pane_Villages_6',
+            onEachFeature: lab_Villages_6,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.shapeMarker(latlng, style_Villages_6_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_Villages_6);
+        map.addLayer(layer_Villages_6);
+        function pop_HealthCenters_7(feature, layer) {
+            var popupContent = "<b>Health Center</b>" + "<br>" + (feature.properties['FACILITNAM'])
+                    ;
+            layer.bindPopup(popupContent, {closeOnClick: true});
+        }
+
+        function style_HealthCenters_7_0() {
+            return {
+                pane: 'pane_HealthCenters_7',
+                rotationAngle: 0.0,
+                rotationOrigin: 'center center',
+                icon: L.icon({
+                    iconUrl: 'legend/HealthCenters_7.png',
+                    iconSize: [16, 16]
+                }),
+                interactive: true,
+            }
+        }
+        map.createPane('pane_HealthCenters_7');
+        map.getPane('pane_HealthCenters_7').style.zIndex = 407;
+        map.getPane('pane_HealthCenters_7').style['mix-blend-mode'] = 'normal';
+        var layer_HealthCenters_7 = new L.geoJson(json_HealthCenters_7, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_HealthCenters_7',
+            layerName: 'layer_HealthCenters_7',
+            pane: 'pane_HealthCenters_7',
+            onEachFeature: pop_HealthCenters_7,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.marker(latlng, style_HealthCenters_7_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_HealthCenters_7);
+        map.addLayer(layer_HealthCenters_7);
+        function pop_Office_8(feature, layer) {
+            var popupContent = 'Field office';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Office_8_0() {
+            return {
+                pane: 'pane_Office_8',
+                radius: 10.0,
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,255,255,1.0)',
+                interactive: true,
+            }
+        }
+        function style_Office_8_1() {
+            return {
+                pane: 'pane_Office_8',
+                radius: 2.1875,
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(0,0,0,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Office_8');
+        map.getPane('pane_Office_8').style.zIndex = 408;
+        map.getPane('pane_Office_8').style['mix-blend-mode'] = 'normal';
+        var layer_Office_8 = new L.geoJson.multiStyle(json_Office_8, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Office_8',
+            layerName: 'layer_Office_8',
+            pane: 'pane_Office_8',
+            onEachFeature: pop_Office_8,
+            pointToLayers: [function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_Office_8_0(feature));
+            },function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_Office_8_1(feature));
+            },
+        ]});
+        bounds_group.addLayer(layer_Office_8);
+        map.addLayer(layer_Office_8);
+
+        function pop_Sectors_9(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">Sector</th>\
+                        <td>' + (feature.properties['number'] !== null ? Autolinker.link(String(feature.properties['number'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>FMW (Kh)</strong><br />' + (feature.properties['fmw'] !== null ? Autolinker.link(String(feature.properties['fmw'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>FMW (En)</strong><br />' + (feature.properties['fmwen'] !== null ? Autolinker.link(String(feature.properties['fmwen'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+            var label = (feature.properties['number']);
+            layer.bindTooltip(label, {permanent: true, direction: 'center'});
+        }
+
+        function style_Sectors_9_0() {
+            return {
+                pane: 'pane_Sectors_9',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Sectors_9');
+        map.getPane('pane_Sectors_9').style.zIndex = 409;
+        map.getPane('pane_Sectors_9').style['mix-blend-mode'] = 'normal';
+        var layer_Sectors_9 = new L.geoJson(json_Sectors_9, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Sectors_9',
+            layerName: 'layer_Sectors_9',
+            pane: 'pane_Sectors_9',
+            onEachFeature: pop_Sectors_9,
+            style: style_Sectors_9_0,
+        });
+        bounds_group.addLayer(layer_Sectors_9);
+        map.addLayer(layer_Sectors_9);
+
+        function style_Negative_10_0() {
+            return {
+                pane: 'pane_Negative_10',
+                radius: 6.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(190,207,80,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Negative_10');
+        map.getPane('pane_Negative_10').style.zIndex = 410;
+        map.getPane('pane_Negative_10').style['mix-blend-mode'] = 'normal';
+        var layer_Negative_10 = new L.geoJson(json_Negative_10, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Negative_10',
+            layerName: 'layer_Negative_10',
+            pane: 'pane_Negative_10',
+            onEachFeature: pop_Negative_10,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_Negative_10_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_Negative_10);
+        map.addLayer(layer_Negative_10);
+        function pop_Negative_10(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">FMW</th>\
+                        <td>' + (feature.properties['fmw'] !== null ? Autolinker.link(String(feature.properties['fmw'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Date</th>\
+                        <td>' + (feature.properties['date'] !== null ? Autolinker.link(String(feature.properties['date'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Time</th>\
+                        <td>' + (feature.properties['time'] !== null ? Autolinker.link(String(feature.properties['time'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+
+        function pop_Basecamps_11(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">Name</th>\
+                        <td>' + (feature.properties['Name'] !== null ? Autolinker.link(String(feature.properties['Name'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Basecamp</th>\
+                        <td>' + (feature.properties['Number'] !== null ? Autolinker.link(String(feature.properties['Number'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Basecamps_11_0() {
+            return {
+                pane: 'pane_Basecamps_11',
+        rotationAngle: 0.0,
+        rotationOrigin: 'center center',
+        icon: L.icon({
+            iconUrl: 'markers/teepee.svg',
+            iconSize: [23.56, 23.56]
+        }),
+                interactive: false,
+            }
+        }
+        map.createPane('pane_Basecamps_11');
+        map.getPane('pane_Basecamps_11').style.zIndex = 411;
+        map.getPane('pane_Basecamps_11').style['mix-blend-mode'] = 'normal';
+        var layer_Basecamps_11 = new L.geoJson(json_Basecamps_11, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_Basecamps_11',
+            layerName: 'layer_Basecamps_11',
+            pane: 'pane_Basecamps_11',
+            onEachFeature: pop_Basecamps_11,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.marker(latlng, style_Basecamps_11_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_Basecamps_11);
+        map.addLayer(layer_Basecamps_11);
+        function pop_Pfpositive_12(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">Date</th>\
+                        <td>' + (feature.properties['date'] !== null ? Autolinker.link(String(feature.properties['date'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Time</th>\
+                        <td>' + (feature.properties['time'] !== null ? Autolinker.link(String(feature.properties['time'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Result</th>\
+                        <td>' + (feature.properties['resen'] !== null ? Autolinker.link(String(feature.properties['resen'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Pfpositive_12_0() {
+            return {
+                pane: 'pane_Pfpositive_12',
+                radius: 11.2,
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(250,255,57,1.0)',
+                interactive: true,
+            }
+        }
+        function style_Pfpositive_12_1() {
+            return {
+                pane: 'pane_Pfpositive_12',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,0,0,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Pfpositive_12');
+        map.getPane('pane_Pfpositive_12').style.zIndex = 412;
+        map.getPane('pane_Pfpositive_12').style['mix-blend-mode'] = 'normal';
+        var layer_Pfpositive_12 = new L.geoJson.multiStyle(json_Pfpositive_12, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Pfpositive_12',
+            layerName: 'layer_Pfpositive_12',
+            pane: 'pane_Pfpositive_12',
+            onEachFeature: pop_Pfpositive_12,
+            pointToLayers: [function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_Pfpositive_12_0(feature));
+            },function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_Pfpositive_12_1(feature));
+            },
+        ]});
+        bounds_group.addLayer(layer_Pfpositive_12);
+        map.addLayer(layer_Pfpositive_12);
+        function pop_Pvpositive_13(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">Date</th>\
+                        <td>' + (feature.properties['date'] !== null ? Autolinker.link(String(feature.properties['date'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Time</th>\
+                        <td>' + (feature.properties['time'] !== null ? Autolinker.link(String(feature.properties['time'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Result</th>\
+                        <td>' + (feature.properties['resen'] !== null ? Autolinker.link(String(feature.properties['resen'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Pvpositive_13_0() {
+            return {
+                pane: 'pane_Pvpositive_13',
+                radius: 11.2,
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(250,255,57,1.0)',
+                interactive: true,
+            }
+        }
+        function style_Pvpositive_13_1() {
+            return {
+                pane: 'pane_Pvpositive_13',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(0,195,229,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Pvpositive_13');
+        map.getPane('pane_Pvpositive_13').style.zIndex = 413;
+        map.getPane('pane_Pvpositive_13').style['mix-blend-mode'] = 'normal';
+        var layer_Pvpositive_13 = new L.geoJson.multiStyle(json_Pvpositive_13, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Pvpositive_13',
+            layerName: 'layer_Pvpositive_13',
+            pane: 'pane_Pvpositive_13',
+            onEachFeature: pop_Pvpositive_13,
+            pointToLayers: [function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_Pvpositive_13_0(feature));
+            },function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_Pvpositive_13_1(feature));
+            },
+        ]});
+        bounds_group.addLayer(layer_Pvpositive_13);
+        map.addLayer(layer_Pvpositive_13);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/Pfpositive_12.png" /> <b>Pf-positive</b>': layer_Pfpositive_12,'<img src="legend/Pvpositive_13.png" /> <b>Pv-positive</b>': layer_Pvpositive_13,'<img src="legend/Negative_10.png" /> Negative tests': layer_Negative_10,'<img src="legend/Sectors_9.png" /> Sectors': layer_Sectors_9,'<img src="legend/Basecamps_11.png" /> Basecamps': layer_Basecamps_11,'<img src="legend/Office_8.png" /> Field office': layer_Office_8,'<img src="legend/HealthCenters_7.png" /> Health Centers': layer_HealthCenters_7,'<img src="legend/Villages_6.png" /> Villages': layer_Villages_6,'<img src="legend/Rivers_5.png" /> Rivers': layer_Rivers_5,'<img src="legend/Week17118_3.png" /> Week 1 (7-11/8)': layer_Week17118_3,'<img src="legend/Week214188_2.png" /> Week 2 (14-18/8)': layer_Week214188_2,'<img src="legend/Week321258_1.png" /> Week 3 (21-25/8)': layer_Week321258_1,'<img src="legend/Week42819_0.png" /> Week 4 (28-1/9)': layer_Week42819_0,'<img src="legend/Week5269_0.png" /> Week 5 (2-6/9)': layer_Week5269_0,"OpenStreetMap": layer_OpenStreetMap_4},{collapsed:false}).addTo(map);
+        setBounds();
+//        var i = 0;
+//        layer_Rivers_5.eachLayer(function(layer) {
+//            var context = {
+//                feature: layer.feature,
+//                variables: {}
+//            };
+//            layer.bindTooltip((layer.feature.properties['NAME_0'] !== null?String('<div style="color: #6498d2; font-size: 10pt; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['NAME_0']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Rivers_5'});
+//            labels.push(layer);
+//            totalMarkers += 1;
+//              layer.added = true;
+//              addLabel(layer, i);
+//              i++;
+//        });
+//        var i = 0;
+//        layer_Villages_6.eachLayer(function(layer) {
+//            var context = {
+//                feature: layer.feature,
+//                variables: {}
+//            };
+//            layer.bindTooltip((layer.feature.properties['village'] !== null?String('<div style="color: #000000; font-size: 10pt; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['village']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Villages_6'});
+//            labels.push(layer);
+//            totalMarkers += 1;
+//              layer.added = true;
+//              addLabel(layer, i);
+//              i++;
+//        });
+//        var i = 0;
+//        layer_HealthCenters_7.eachLayer(function(layer) {
+//            var context = {
+//                feature: layer.feature,
+//                variables: {}
+//            };
+//            layer.bindTooltip((layer.feature.properties['FACILITNAM'] !== null?String('<div style="color: #000000; font-size: 10pt; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['FACILITNAM']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_HealthCenters_7'});
+//            labels.push(layer);
+//            totalMarkers += 1;
+//              layer.added = true;
+//              addLabel(layer, i);
+//              i++;
+//        });
+//        var i = 0;
+//        layer_Sectors_9.eachLayer(function(layer) {
+//            var context = {
+//                feature: layer.feature,
+//                variables: {}
+//            };
+//            layer.bindTooltip((layer.feature.properties['number'] !== null?String('<div style="color: #000000; font-size: 11pt; font-weight: bold; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['number']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Sectors_9'});
+//            labels.push(layer);
+//            totalMarkers += 1;
+//              layer.added = true;
+//              addLabel(layer, i);
+//              i++;
+//        });
+        resetLabels([layer_Rivers_5,layer_Villages_6,layer_HealthCenters_7,layer_Sectors_9,layer_Basecamps_11]);
+        map.on("zoomend", function(){
+            resetLabels([layer_Rivers_5,layer_Villages_6,layer_HealthCenters_7,layer_Sectors_9,layer_Basecamps_11]);
+        });
+        map.on("layeradd", function(){
+            resetLabels([layer_Rivers_5,layer_Villages_6,layer_HealthCenters_7,layer_Sectors_9,layer_Basecamps_11]);
+        });
+        map.on("layerremove", function(){
+            resetLabels([layer_Rivers_5,layer_Villages_6,layer_HealthCenters_7,layer_Sectors_9,layer_Basecamps_11]);
+        });
+        </script>
+    </body>
+</html>

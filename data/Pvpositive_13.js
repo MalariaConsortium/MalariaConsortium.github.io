@@ -1,0 +1,1 @@
+var json_Pvpositive_13 = {"type":"FeatureCollection","name":"Pvpositive_13","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"date":"8\/10\/2019","time":"9:46:00 AM","resen":"Pv"},"geometry":{"type":"MultiPoint","coordinates":[[105.8226933,13.2646735]]}}]}
